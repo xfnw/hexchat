@@ -1,0 +1,1 @@
+build-base cmake gtk+2.0-dev libc-utils luajit-dev meson openssl-dev pciutils-dev perl-dev py3-cffi python3-dev
