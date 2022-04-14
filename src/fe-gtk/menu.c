@@ -1858,9 +1858,9 @@ static struct mymenu mymenu[] = {
 	{N_("Save Text" ELLIPSIS), menu_savebuffer, GTK_STOCK_SAVE, M_MENUSTOCK, 0, 0, 1},
 #define SEARCH_OFFSET (70)
 	{N_("Search"), 0, GTK_STOCK_JUSTIFY_LEFT, M_MENUSUB, 0, 0, 1},
-		{N_("Search Text" ELLIPSIS), menu_search, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1, GDK_KEY_f},
-		{N_("Search Next"   ), menu_search_next, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1, GDK_KEY_g},
-		{N_("Search Previous"   ), menu_search_prev, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1, GDK_KEY_G},
+		{N_("Search Text" ELLIPSIS), menu_search, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1, GDK_KEY_r},
+		{N_("Search Next"   ), menu_search_next, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1},
+		{N_("Search Previous"   ), menu_search_prev, GTK_STOCK_FIND, M_MENUSTOCK, 0, 0, 1},
 		{0, 0, 0, M_END, 0, 0, 0},
 
 	{N_("_Help"), 0, 0, M_NEWMENU, 0, 0, 1},	/* 74 */
@@ -2277,7 +2277,7 @@ menu_create_main (void *accel_group, int bar, int away, int toplevel,
 	GtkWidget *usermenu = 0;
 	GtkWidget *submenu = 0;
 	int close_mask = STATE_CTRL;
-	int away_mask = STATE_ALT;
+	int away_mask = STATE_ALT | STATE_CTRL;
 	char *key_theme = NULL;
 	GtkSettings *settings;
 	GSList *group = NULL;
