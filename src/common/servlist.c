@@ -304,7 +304,7 @@ static const struct defaultserver def[] =
 
 	{"Techtronix",	0, 0, 0, LOGIN_SASL, 0, TRUE},
 	{0,			"irc.techtronix.net"},
-	
+
 	{"tilde.chat", 0, 0, 0, LOGIN_SASL, 0, TRUE},
 	{0,			"irc.tilde.chat"},
 
